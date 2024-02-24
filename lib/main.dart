@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pm1_new/pm1_home_screen.dart';
 import 'package:pm1_new/pm1_welcome_screen.dart';
 
 void main() {
@@ -37,8 +38,8 @@ class MyApp extends StatelessWidget {
       // home: const Pm1WelcomeScreen(title: 'PM1 Welcome Screen'),
       home: const Pm1WelcomeScreen(),
       routes: {
-        '/welcomescreen':(context) => Pm1WelcomeScreen(),
-     },
+        '/pm1homescreen': (context) => Pm1_Home_Screen(),
+      },
     );
   }
 }

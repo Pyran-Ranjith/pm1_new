@@ -61,7 +61,7 @@ class Pm1WelcomeScreen extends StatelessWidget {
                 text: "Get Started",
                 onTap: () {
                   //go to menu page
-                  Navigator.pushNamed(context, '/memupage');
+                  Navigator.pushNamed(context, '/pm1homescreen');
                 },
               )
             ]),
