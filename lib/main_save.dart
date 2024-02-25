@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pm1_new/pm1_home_screen.dart';
 import 'package:pm1_new/pm1_welcome_screen.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'PM1 Welcome Screen',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -34,11 +35,11 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const IntroPage(title: 'Flutter Demo Home Page'),
+      // home: const Pm1WelcomeScreen(title: 'PM1 Welcome Screen'),
       home: const Pm1WelcomeScreen(),
       routes: {
-        '/intropage':(context) => Pm1WelcomeScreen(),
-        //  '/menupage':(context) => MenuPage(),
-     },
+        '/pm1homescreen': (context) => Pm1_Home_Screen(),
+      },
     );
   }
 }
